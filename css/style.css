@@ -1,4 +1,4 @@
-* {
+1. Main css code * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,4 +23,7 @@
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+}
+.header {
+    border-top: 4px solid #295093;
 }
