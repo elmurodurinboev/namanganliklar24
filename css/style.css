@@ -1,4 +1,6 @@
-1. Main css code * {
+/* 1. Main css code  */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
