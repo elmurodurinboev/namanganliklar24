@@ -39,6 +39,8 @@ body{
 }
 .header {
     border-top: 4px solid #295093;
+    margin-bottom: 34px;
+
 }
 
 /* End MAIN CSS */
@@ -56,10 +58,15 @@ body{
 .website-logo{
     margin-right: 17px;
     padding: 6px;
-    box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
     border-radius: 5px;
     display: flex;
     align-items: center;
+    transition: all .3s ease;
+
+}
+
+.website-logo:hover{
+    box-shadow: 0px 4px 6px rgba(202, 202, 202, 0.25);
 }
 
 /* EXCHANGE RATE */
@@ -99,10 +106,12 @@ body{
     display: flex;
     align-items: center;
     margin-right: 22px;
+    transition: all .3s ease;
 }
 
 .searche-bar:hover{
-    box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+    box-shadow: 0px 4px 6px rgba(202, 202, 202, 0.25);
+
 
 }
 
@@ -115,10 +124,12 @@ body{
     border-radius: 5px;
     padding: 10px 11px;
     margin-right: 24px;
+    transition: all 0.3s ease;
 }
 
 .site-language:hover{
-    box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+    box-shadow: 0px 4px 6px rgba(202, 202, 202, 0.25);
+
 }
 
 .site-language-icon {
@@ -147,6 +158,12 @@ body{
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    transition: all .3s ease;
+    
+}
+
+.telegram-subschribe:hover{
+    background-image: linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
 }
 
 .telegram-icon {
@@ -154,7 +171,41 @@ body{
 }
 
 
-.telegram-subschribe:hover{
-    background-image: linear-gradient(90deg, #37AEE2 15.07%, #1E96C8 85.96%);
-    
+/* NAVBAR */
+.nav-list{
+    list-style: none;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 25px;
+    align-items:center;
+    justify-content: space-around;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(202, 202, 202, 0.25);
+
+}
+
+.sitenav-link{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    font-family: 'Rubik';
+    color: #515151;
+    transition: all .3s ease;
+}
+
+.sitenav-link:hover{
+    color: #295091;
+   
+}
+
+@media max-width (1000px) {
+
+
+
+
+
 }
