@@ -43,6 +43,11 @@ body{
 
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+ } 
+
 /* End MAIN CSS */
 
 /* HEADER */
@@ -71,7 +76,9 @@ body{
 
 /* EXCHANGE RATE */
 
-
+.exchange-rate{
+    display: flex;
+}
 .exchange-rate-item {
     list-style: none;
     display: flex;
@@ -92,6 +99,9 @@ body{
 
 
 /* header-top__right */
+.header-top{
+    display: flex;
+}
 
 .header-top__right {
     margin-left: auto;
@@ -172,26 +182,30 @@ body{
 
 
 /* NAVBAR */
-.nav-list{
+.sitenav{
     list-style: none;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     padding: 26px 25px;
     align-items:center;
-    justify-content: space-around;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
     margin-bottom: 24px;
+    justify-content: center;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(202, 202, 202, 0.25);
 
+}
+.sitenav .sitenav-item:not(:last-child){
+    margin-right: 24px;
 }
 
 .sitenav-link{
     text-decoration: none;
     font-style: normal;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 23px;
+
     font-family: 'Rubik';
     color: #515151;
     transition: all .3s ease;
@@ -199,13 +213,60 @@ body{
 
 .sitenav-link:hover{
     color: #295091;
-   
 }
 
-@media max-width (1000px) {
+/* MEDIA QUERY */
 
+@media (max-width: 1000px){
 
+    .exchange-rate{
+        order: -1;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+        margin-top: 0px;    
+    }   
 
+    .header-top{
+        padding-top: 20px;
+    }
 
+}
+
+@media (max-width: 850px){
+
+    .exchange-rate{
+        font-size: 14px;
+        line-height: 17px;    
+    }   
+
+    .header-top{
+        justify-content: stretch;
+        padding-bottom: 20px;
+    }
+
+    .sitenav{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 15px;
+        
+    }
+
+    .sitenav-item{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+}
+
+@media (max-width: 750px){
+
+    .exchange-rate{
+        display: none   ;    
+    }   
+
+    .banner{
+        display: none;
+    }
 
 }
