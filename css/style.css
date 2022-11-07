@@ -118,7 +118,7 @@ img{
 }
 
 
-/* header-top__right */
+/* .site-header__right */
 
 .site-header__right {
     display: flex;
@@ -173,26 +173,37 @@ img{
     font-family: 'Roboto';
 }
 
+
+
+/* TELEGRAM-SUBCHRIBE */
+
+
+
 .telegram-subschribe {
     border: none;
-    position: relative;
     display: flex;
     font-size: 16px;
     font-weight: 500;
-    color: #FFFFFF;
     line-height: 19px;
     font-style: normal;
     border-radius: 5px;
     align-items: center;
     font-family: 'Rubik';
     padding: 10px 10px 8px 11px;
-    z-index: 10;
-    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
-    transition: all .3s ease;
     cursor: pointer;
 }
 
-.telegram-subschribe::before{
+/* HEADER-TELEGRAM-SUB */
+.header-telegram__sub{
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    transition: all .3s ease;
+    position: relative;
+    z-index: 10;
+
+}
+
+.header-telegram__sub::before{
     content: '';    
     position: absolute;
     top: 0;
@@ -207,7 +218,7 @@ img{
     transition: all 0.3s ease;
 }
 
-.telegram-subschribe:hover::before{
+.header-telegram__sub:hover::before{
     opacity: 1;
 }
 
@@ -263,6 +274,66 @@ img{
     display: none;
 }
 
+/* FOOTER */
+
+.footer {
+    background: #295093;
+    display: flex;
+    padding: 18px 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    font-family: Rubik;
+
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-logo{
+    padding: 11px 12px 6px 9px;
+    border-radius: 5px;
+    background-color: #133C82;
+    display: inline-block;
+    margin-right: auto;
+}
+
+
+.footer-telegram__sub{
+    background-color: #fff;
+    margin-left: 17px;
+    color: #133C82;
+}
+
+.telegram-icon__dark {
+    margin-right: 8px;
+}
+
+.footer-horizontal-line {
+    border: none;
+    background-color: #133C82;
+    height: 3px;
+    margin: 18px 0 12px 0;
+}
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-title {
+    font-size: 16px;
+}
+
+.footer-bottom-text {
+    width: 365px;
+    display: block;
+}
+
+
 /* MEDIA QUERY */
 
 @media (max-width: 1000px){
@@ -284,6 +355,8 @@ img{
     }
 
 }
+
+/* MEDIA QUERY 850< */
 
 @media (max-width: 850px){
 
@@ -310,6 +383,8 @@ img{
     }
 
 }
+
+/* MEDIA QUERY 750< */
 
 @media (max-width: 750px){
 
