@@ -13,15 +13,14 @@
     box-sizing: border-box;
 }
 
-body{
-    border-top: 4px solid rgb(41, 80, 147);
-}
 
 .wrapper {
     display: flex;
     min-height: 100vh;
     position: relative;
     flex-direction: column;
+    border-top: 4px solid rgb(41, 80, 147);
+
 }
 
 .backdrop{
@@ -336,7 +335,7 @@ img{
 
 
 .footer-bottom-text {
-    width: 365px;
+    max-width: 365px;
 }
 
 .footer-list {
@@ -420,15 +419,19 @@ img{
 
     .wrapper{
         margin-top: 79px;
+        border-top: none;
     }
 
     .site-header{
+
         padding: 20px;
         position: fixed;
         left: 0;
         top: 0;
         width: 100%;
         background-color: #F6F6F9;
+    border-top: 4px solid rgb(41, 80, 147);
+
     }
 
     .site-header__toggler{
