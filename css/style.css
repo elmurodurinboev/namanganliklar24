@@ -319,6 +319,10 @@ img{
     height: 3px;
     margin: 18px 0 12px 0;
 }
+
+
+
+
 .footer-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -326,11 +330,37 @@ img{
 
 .footer-bottom-title {
     font-size: 16px;
+    margin-bottom: 20px;
+    margin-right: 115px;
 }
+
 
 .footer-bottom-text {
     width: 365px;
-    display: block;
+}
+
+.footer-list {
+    list-style: none;
+    margin-left: 115px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-list-item{
+    width: 50%;
+}
+
+.footer-list li {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 
