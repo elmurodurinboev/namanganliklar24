@@ -273,6 +273,10 @@ img{
     display: none;
 }
 
+.banner-img {
+    margin-bottom: 12px;
+}
+
 /* FOOTER */
 
 .footer {
@@ -319,47 +323,46 @@ img{
     margin: 18px 0 12px 0;
 }
 
-
-
-
 .footer-bottom {
     display: flex;
     flex-wrap: wrap;
+
+}
+
+.footer-about {
+    display: inline-block;
+    margin-right: 115px;
 }
 
 .footer-bottom-title {
     font-size: 16px;
     margin-bottom: 20px;
-    margin-right: 115px;
 }
-
 
 .footer-bottom-text {
     max-width: 365px;
+    display: inline-block;
 }
 
 .footer-list {
-    list-style: none;
-    margin-left: 115px;
-    width: 50%;
+    width: 520px;
     display: flex;
     flex-wrap: wrap;
-
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-list-item{
+.footer-list-item {
+    font-size: 14px;
+    margin-bottom: 12px;
     width: 50%;
 }
 
-.footer-list li {
-    display: inline-block;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.footer-list li a {
+.footer-list__link {
     text-decoration: none;
-    color: #fff;
+    color: #fff;    
+    display: inline-block;
 }
 
 
@@ -373,7 +376,7 @@ img{
         margin-top: 0px;    
         margin-bottom: 15px;
         justify-content: center;
-    }   
+    }
 
     .site-logo{
         margin-right: 0;
@@ -382,6 +385,12 @@ img{
     .site-header{
         padding-top: 20px;
     }
+
+
+    .footer-telegram__sub{
+        margin-left: auto;
+    }
+
 
 }
 
@@ -430,7 +439,7 @@ img{
         top: 0;
         width: 100%;
         background-color: #F6F6F9;
-    border-top: 4px solid rgb(41, 80, 147);
+        border-top: 4px solid rgb(41, 80, 147);
 
     }
 
@@ -454,7 +463,7 @@ img{
     .exchange-rate,
     .site-language,
     .sitenav,
-    .telegram-subschribe{
+    .header-telegram__sub{
         display: none   ;    
     }   
 
@@ -484,5 +493,14 @@ img{
     .sitenav .sitenav-list .sitenav-item{
         margin-right: 0;
     } 
+
+    .footer-logo {
+        order: -5;
+    }
+
+    .footer-telegram__sub {
+        order: -1;
+        margin: 0;
+    }
     
 }
