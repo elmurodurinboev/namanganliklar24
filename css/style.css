@@ -287,7 +287,7 @@ img{
     flex-wrap: wrap;
     color: #000;
     margin-bottom: 18px;
-    padding: 30px 35px;
+    padding: 30px 50px 30px 35px;
     border-radius: 5px;
     font-family: 'Rubik';
     background: #F6F6F9;
@@ -306,8 +306,54 @@ img{
 }
 
 
+.covid-info-item {
+    display: flex;
+    margin: 0 auto;
+    border-left: 2px solid #F4CCD1;
+}
 
+.coovid-info-item-des__value {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 29px;
+    margin-top: 8px;
+}
 
+.covid-info-item-des {
+    margin-left: 19px;
+}
+
+.covid-info-item-infected {
+    padding: 17px 0;
+    border-left: 2px solid #EB5569;
+}
+
+.covid-info-item-infected-icon,
+.covid-info-item-healty-icon,
+.covid-info-item-died-icon {
+    margin-left: 30px;
+}
+
+.coovid-info-item-des-infected__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #DB0000;
+}
+
+.coovid-info-item-des-healthy__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #05B135;
+}
+
+.coovid-info-item-des-died__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
 
 /* FOOTER */
 
@@ -340,7 +386,7 @@ img{
 
 .footer-telegram__sub{
     background-color: #fff;
-    margin-left: 17px;
+    margin-left: 10px;
     color: #133C82;
 }
 
@@ -362,7 +408,7 @@ img{
 }
 
 .footer-about {
-    display: inline-block;
+    /* display: inline-block; */
     margin-right: 115px;
 }
 
@@ -373,7 +419,7 @@ img{
 
 .footer-bottom-text {
     max-width: 365px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .footer-list {
@@ -400,6 +446,25 @@ img{
 
 /* MEDIA QUERY */
 
+@media (max-width: 1050px){
+    .footer-top__des{
+        order: -5;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .footer-about {
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-bottom-text {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 1000px){
 
     .exchange-rate{
@@ -421,6 +486,29 @@ img{
 
     .footer-telegram__sub{
         margin-left: auto;
+    }
+
+    .covid-info-des {
+        width: 100%;
+        padding: 10px 0;
+        margin: 0 auto 20px auto;
+        border-bottom: 2px solid #DB0000;
+        
+    }
+    
+    .covid-info-title {
+        width: 100%;
+    }
+
+    .covid-info-item{
+        border-left: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+
+    .footer-bottom-tex {
+        width: 100%;
     }
 
 
@@ -452,6 +540,10 @@ img{
         margin-bottom: 3px;
     }
 
+
+    .footer-bottom-text {
+        margin: 0;
+    }
 }
 
 /* MEDIA QUERY 750< */
@@ -526,13 +618,19 @@ img{
         margin-right: 0;
     } 
 
+    .covid-info-item {
+        width: 100%;
+    }
+
     .footer-logo {
         order: -5;
+
+        margin-bottom: 10px;
     }
 
     .footer-telegram__sub {
         order: -1;
-        margin: 0;
+        margin-left: auto;
     }
     
 }
